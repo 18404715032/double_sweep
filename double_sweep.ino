@@ -26,7 +26,7 @@ void loop( ) {
   check888( );
 }
 void check555( ) {
-   if(millis( ) - last555 < every555) return;
+   if(millis( ) - last555 < every555) return;//如果(现在时间—上次做事时间)<every)就立即离开函数,不再继续
    last555 = millis( );
    pos555 += dir5;
    sv5.write(pos555);
